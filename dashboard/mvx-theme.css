@@ -1,0 +1,39 @@
+:root {
+  --bg-0: #030711;
+  --bg-1: #07111f;
+  --panel: rgba(8, 18, 33, 0.88);
+  --panel-border: rgba(45, 201, 247, 0.24);
+  --text: #f4fbff;
+  --muted: #91a4ba;
+  --cyan: #2dc9f7;
+  --amber: #f1b95b;
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(45, 201, 247, 0.14) 0%, transparent 34%),
+    radial-gradient(circle at 88% 4%, rgba(37, 99, 235, 0.10) 0%, transparent 27%),
+    linear-gradient(160deg, var(--bg-0), var(--bg-1));
+}
+
+.mesh {
+  background: linear-gradient(110deg, transparent 45%, rgba(45, 201, 247, 0.055) 55%, transparent 64%);
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "MVX";
+  position: absolute;
+  right: 20px;
+  bottom: -24px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: clamp(4rem, 9vw, 8rem);
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: rgba(45, 201, 247, 0.035);
+  pointer-events: none;
+}
