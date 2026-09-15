@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#050914" />
-  <meta name="application-name" content="MVX Company OS" />
-  <meta name="description" content="MVX Ads Master autonomous company runtime control deck." />
-  <title>MVX Company OS — Control Deck</title>
+  <meta name="application-name" content="MVX Brief Planner" />
+  <meta name="description" content="MVX Ads Master multi-agent campaign brief planning and production handoff." />
+  <title>MVX Brief Planner — Auto Company</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,14 +20,14 @@
   <main class="deck">
     <header class="hero panel reveal-1">
       <div>
-        <p class="eyebrow">MVX ADS MASTER · COMPANY OS</p>
-        <h1>MVX Company OS</h1>
-        <p class="subtitle">Autonomous company runtime telemetry with explicit action controls.</p>
+        <p class="eyebrow">MVX ADS MASTER · BRIEF PLANNING</p>
+        <h1>MVX Brief Planner</h1>
+        <p class="subtitle">Multi-agent brief planning, challenge, pre-mortem and production handoff powered by Auto Company.</p>
       </div>
       <div class="hero-meta">
         <div class="pulse-wrap">
           <span id="pulseDot" class="pulse-dot"></span>
-          <span id="pulseText">Live Link: UNKNOWN</span>
+          <span id="pulseText">Planning Runtime: UNKNOWN</span>
         </div>
         <p id="lastUpdate">Last update: --</p>
         <p id="latency">Roundtrip: --</p>
@@ -64,12 +64,12 @@
         <p class="muted mono" id="guardianMeta">PID --</p>
       </article>
       <article class="panel card status-card" id="cardDaemon">
-        <h3>Daemon</h3>
+        <h3>Planning Daemon</h3>
         <p class="big" id="daemonState">--</p>
         <p class="muted mono" id="daemonMeta">MainPID --</p>
       </article>
       <article class="panel card status-card" id="cardLoop">
-        <h3>Loop</h3>
+        <h3>Planning Loop</h3>
         <p class="big" id="loopState">--</p>
         <p class="muted mono" id="loopMeta">Cycle --</p>
       </article>
@@ -82,7 +82,7 @@
 
     <section class="panel detail status-card reveal-4" id="cardUsage" aria-labelledby="usageHeading">
       <div class="usage-head">
-        <h3 id="usageHeading">Usage &amp; Budget</h3>
+        <h3 id="usageHeading">Planning Usage &amp; Budget</h3>
         <label>Window
           <select id="usagePeriod">
             <option value="day" selected>Today</option>
@@ -100,18 +100,18 @@
 
     <section class="grid-details reveal-4">
       <article class="panel detail">
-        <h3>Runtime State</h3>
+        <h3>Planning Runtime State</h3>
         <dl id="stateList" class="state-list"></dl>
       </article>
       <article class="panel detail">
-        <h3>Consensus Head</h3>
+        <h3>Planning Consensus</h3>
         <div id="consensusText" class="markdown-view">(loading...)</div>
       </article>
     </section>
 
     <section class="panel reveal-5">
       <div class="panel-head">
-        <h3>Recent Log</h3>
+        <h3>Recent Planning Log</h3>
         <button id="btnTail" class="btn btn-ghost small">Reload Log Tail</button>
       </div>
       <pre id="logText" class="terminal tall">(loading...)</pre>
@@ -119,7 +119,7 @@
 
     <section class="panel reveal-6">
       <div class="panel-head">
-        <h3>Raw Status Output</h3>
+        <h3>Raw Runtime Status</h3>
         <button id="btnRaw" class="btn btn-ghost small">Toggle</button>
       </div>
       <pre id="rawText" class="terminal hidden"></pre>
